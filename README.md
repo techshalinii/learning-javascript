@@ -7,7 +7,8 @@ Code editor used here is vscode.
 
 
 
-https://github.com/user-attachments/assets/67c0ddbf-8603-449f-8dc9-0c0d195659f1 <br>
+https://github.com/user-attachments/assets/67c0ddbf-8603-449f-8dc9-0c0d195659f1 
+
 ### JavaScript Objects
 
 
