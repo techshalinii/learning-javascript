@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Arrays</h2>
+    <p>
+        An array is a special variable, which can hold more than one value.
+    </p>
+    <h3>Why Use Arrays?</h3>
+    <p>An array can hold many values under a variable, and can access the values by referring to an index number.</p>
+    <h3>Arrays are Objects</h3>
+    <p>
+        Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.
+    </p>
+    <script>
+        // creating an Array
+        const students = ["Shalini", "Vivek", "Bhumi"];
+        console.log(students);
+
+        //another way to create an array
+        const students1 = [];
+        students1 [0]= "Sunaina";
+        students1 [1]= "Ritu";
+        students1 [2]= "Nidhi";
+        console.log(students1);
+
+        //Accessing Array Elements
+        let name=students1[0];
+        console.log(name);
+
+        //Changing an Array Element
+        students1[1]="Hana";
+        console.log(students1);
+
+        //Using the JavaScript Keyword new
+        const languages = new Array("Java", "Python", "JavaScript");
+        console.log(languages);
+
+        //Array Properties and Methods
+        //The length Property
+        let length=students1.length;
+        console.log("length of array=",length);
+
+        //Accessing the First Array Element
+        let first=students1[0];
+        console.log("first element of array:",first);
+
+        //Accessing the Last Array Element
+        let last=students1[students1.length -1];
+        console.log("last element of array:",last);
+        
+        //Adding Array Elements
+        students1.push("Divya");
+        console.log(students1);
+
+    </script>
+</body>
+</html>
