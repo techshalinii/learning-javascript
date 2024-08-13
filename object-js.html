@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Object Definition</h2>
+    <p>JavaScript object is a variable that can store multiple data in key-value pairs.</p>
+    <h3>How to Define a JavaScript Object</h3>
+    <p>1. Using an Object Literal <br>
+        2. Using the new Keyword <br>
+        3. Using an Object Constructor <br>
+    </p>
+    <script>
+        // object in one line
+        const person = { name: "shalini", age: 20 };
+        console.log(person);
+
+
+        // another way to create object
+        const student={
+            Name:"Shalini Kumari",
+            marks: 86.5,
+            printMarks: function(){
+                console.log("marks=", student.marks);
+            },
+        };
+
+        // display the object
+        console.log(student);
+        student.printMarks();
+
+        // modify property
+        student.marks =90.8;
+
+        // display modified object
+        console.log(student);
+
+        // add properties
+        student.rollNo = 14;
+        student.subject = "Science";
+
+        // display the object
+        console.log(student);
+
+         //deleting the object property
+         delete student.subject;
+
+         // display the object
+        console.log(student);
+
+
+        //Using new keyword
+        // Create an Object
+        const person1 = new Object();
+        //Properties
+        person1.firstName = "Shalini";
+        person1.lastName = "Kumari";
+        person1.age = 20;
+        console.log(person1);
+
+
+        //return in onject
+        const person2 = {
+        firstName: "Ritu",
+        lastName: "Kumari",
+        age:19,
+        fullName: function() {
+        return this.firstName + " " + this.lastName;
+            }
+        };
+        console.log(person2.fullName());
+
+
+    
+
+   
+    
+    </script>
+</body>
+</html>
