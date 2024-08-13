@@ -14,3 +14,6 @@ https://github.com/user-attachments/assets/67c0ddbf-8603-449f-8dc9-0c0d195659f1
 
 
 ![objects output Screen](https://github.com/user-attachments/assets/570f421b-a069-4376-ae2a-1636f4ac9b77)
+
+###JavaScript Array
+![array js](https://github.com/user-attachments/assets/a43d1d9b-8ad7-4677-a24e-a4a3f5339e30)
