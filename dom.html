@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-DOM</title>
+</head>
+<body bgcolor="pink">
+    <h2 class="heading">JavaScript DOM(Document Object Model)</h2>
+    <div>
+        <p id="message" type="text" class="object">With the object model, JavaScript gets all the power it needs to create dynamic HTML:</p>
+        <ul id="container">
+            <li class="list">JavaScript can change all the HTML elements in the page</li>
+            <li class="list">JavaScript can change all the HTML attributes in the page</li>
+            <li class="list">JavaScript can change all the CSS styles in the page</li>
+            <li class="list">JavaScript can remove existing HTML elements and attributes</li>
+            <li class="list">JavaScript can add new HTML elements and attributes</li>
+        </ul>
+    </div>
+    <div class="def">
+        <p class="text">
+            When html document is loaded in the browser, it becomes a document object. It is the root element that represents the html document. It has properties and methods. By the help of document object, we can add dynamic content to our web page.
+        </p>
+        <p>
+            We can access and change the contents of document by its methods.
+        </p>
+        <p>
+            getElementById()	returns the element having the given id value.
+        </p>
+        <p class="second">
+            getElementsByName()	returns all the elements having the given name value.
+        </p>
+        <p>
+            getElementsByTagName()	returns all the elements having the given tag name.
+        </p>
+        <p>
+            getElementsByClassName()	returns all the elements having the given class name.
+        </p>
+    </div>
+    <script>
+        //getElementById Method
+        let msg = document.getElementById("message");
+        console.log(msg);
+        // If that id is not present it will print null
+        let message = document.getElementById("msg");
+        console.log(message);
+
+        //getElementsByTagName Method
+        let heading = document.getElementsByTagName("h2");
+        console.log(heading);
+
+        //getElementsByClassName
+        let list = document.getElementsByClassName("list");
+        console.log(list);
+
+        let cont = document.getElementById("container");
+        let list1 = cont.getElementsByClassName("list");
+        console.log(list1);
+
+        //querySelector
+        let query = document.querySelector(".heading");
+        console.log(query);
+
+        //querySelectorAll
+        let cont1= document.getElementById("container");
+        let query1 = cont1.querySelectorAll(".list");
+        console.log(query1);
+
+        let sAll = document.querySelectorAll("div, h2");
+        console.log(sAll);
+
+        //Traversing Elements
+        let txt= document.querySelector(".text");
+        console.log(txt.parentNode);
+
+        let parent = document.querySelector(".def");
+        // first Child
+        console.log(parent.firstElementChild);
+        // last child
+        console.log(parent.lastElementChild);
+        // all child
+        console.log(parent.childNodes);
+        // siblings
+        let second = document.querySelector(".second");
+        console.log(second.previousElementSibling);
+        console.log(second.nextElementSibling);
+
+        //manipulare HTML elements
+        //document.createElement Method
+
+        let div = document.createElement("div");
+        div.innerHTML = "<h3>Why is DOM Required?</h3> <p> HTML is used to structure the web pages and Javascript is used to add behavior to our web pages. When an HTML file is loaded into the browser, the JavaScript can not understand the HTML document directly. So it interprets and interacts with the Document Object Model (DOM), which is created by the browser based on the HTML document.</p>";
+        document.body.appendChild(div);
+        div.id ="req"
+        console.log(div);
+
+        //append child method
+        let js = document.getElementById("container");
+        let li = document.createElement("li");
+        li.innerHTML="JavaScript can change all the HTML elements in the page";
+        container.appendChild(li);
+
+        // text content
+        console.log(js.textContent);
+
+        // remove chid
+        js.removeChild(js.lastElementChild);
+
+        //Attribute method
+        //get attribute
+
+        let obj = document.getElementById("message");
+        console.log(obj.attributes);
+
+        //set Arttribute
+        obj.setAttribute("class", "object");
+        console.log(obj);
+
+        //has attribute
+        console.log(obj.hasAttribute("class"));
+        console.log(obj.hasAttribute("id"));
+        console.log(obj.hasAttribute("placeholder"));
+
+
+        // remove attribute
+        obj.removeAttribute("class");
+        console.log(obj);
+
+        //manipulating Element's Styles
+        console.log(obj.style);
+        console.log(obj.style.fontSize);
+        
+        //css text
+        obj.style.cssText ="fontsize:25px";
+        console.log(obj);
+
+        // all css propery applied in it 
+        console.log(window.getComputedStyle(obj));
+
+        console.log(window.getComputedStyle(obj).fontFamily);
+    </script>
+</body>
+</html>
