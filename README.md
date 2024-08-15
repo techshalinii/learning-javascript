@@ -17,3 +17,11 @@ https://github.com/user-attachments/assets/67c0ddbf-8603-449f-8dc9-0c0d195659f1
 
 ### JavaScript Array
 ![array js](https://github.com/user-attachments/assets/a43d1d9b-8ad7-4677-a24e-a4a3f5339e30)
+
+### JavaScript DOM
+HTML is used to structure the web pages and Javascript is used to add behavior to our web pages. When an HTML file is loaded into the browser, the JavaScript can not understand the HTML document directly. So it interprets and interacts with the Document Object Model (DOM), which is created by the browser based on the HTML document.
+
+
+
+https://github.com/user-attachments/assets/e57ad449-1fd3-422e-ac2f-289e7299d1ae
+
