@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events-JS</title>
+</head>
+<body>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(30, 50, 70);
+            color: white;
+            border: 1px solid black;
+        }
+        .Darkmode {
+            background-color: black;
+            color: white;
+        }
+        .Lightmode{
+            background-color: white;
+            color: black;
+        }
+    </style>
+    
+    <body>
+        <h1>
+            Events
+        </h1>
+        <p>
+           Events are fired to notify code of "interesting changes" that may affect code execution. These can arise from user interactions such as using a mouse or resizing a window, changes in the state of the underlying environment (e.g. low battery or media events from the operating system), and other causes.
+        </p>
+        <p>Button with inline event handler</p>
+        <!-- Button with inline event handler -->
+        <button onclick="console.log('button was clicked');alert('Hey!');">
+            click me!
+        </button> <br>
+    
+        <button ondblclick="console.log('button was clicked 2x')">
+            click 2 times!
+        </button>
+        <br>
+        <p></p>mouse over event</p>
+
+        <div>this is a box</div>
+     <!-- Buttons to be handled by JavaScript -->
+        <button id="btn2">btn2</button> <br>
+    
+        <button id="btn3">btn3</button> <br>
+
+       
+        <button id="mode">Change mode</button>
+    
+        <script>
+    
+            let btn2 = document.querySelector("#btn2");
+    
+            btn2.onclick = () => {
+                console.log("btn2 was clicked");
+                let a = 25;
+                a++;
+                console.log(a);
+            };
+    
+    
+            let div = document.querySelector("div");
+            div.onmouseover = () => {
+                console.log("you are inside div");
+            };
+    
+    
+            let btn3 = document.querySelector("#btn3");
+            btn3.onclick = (evt) => {
+                console.log(evt);
+                console.log(evt.type);
+                console.log(evt.target);
+                console.log(evt.clientX, evt.clientY);
+            };
+    
+    
+            div.onmouseover = (evt) => {
+                console.log(evt);
+                console.log(evt.type);
+                console.log(evt.target);
+                console.log(evt.clientX, evt.clientY);
+            };
+
+    
+            // Mode Changer
+            let modeBtn = document.querySelector("#mode");
+            let body = document.querySelector("body");
+            let currmode = "Light-mode"; 
+            modeBtn.addEventListener("click", () => {
+                if(currmode == "Light-mode"){
+                    currmode = "Dark-mode";
+                   body.classList.add("Darkmode");
+                   body.classList.remove("Lightmode");
+                }
+                else{
+                    currmode = "Light-mode";
+                    body.classList.add("Lightmode");
+                    body.classList.remove("Darkmode");
+                }
+                console.log("currmode");
+            })
+        </script>
+</body>
+</html>
