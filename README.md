@@ -28,6 +28,19 @@ https://github.com/user-attachments/assets/e57ad449-1fd3-422e-ac2f-289e7299d1ae
 ### JavaScript Events
 Events are things that happen in the system you are programming, which the system tells you about so your code can react to them.
 
+### BOM (Browser Object Model)
+![BOM](https://github.com/user-attachments/assets/ab8b4f00-32d9-4547-a7a5-abace85f7a9a)
+
+### This keyword
+![this](https://github.com/user-attachments/assets/7e52b49e-dd67-4ec6-8969-a05f36741d1e)
+
+### JSON
+
+![json](https://github.com/user-attachments/assets/b8c7693e-f55b-4fff-9749-030edfc435aa)
+
+
+
+
 
 
 https://github.com/user-attachments/assets/4b569a19-16a8-4d20-b3e8-bd45319d0b7c
