@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <p>
+        he JSON namespace object contains static methods for parsing values from and converting values to JavaScript Object Notation (JSON).
+    </p>
+    <p>
+        Unlike most global objects, JSON is not a constructor. You cannot use it with the new operator or invoke the JSON object as a function. All properties and methods of JSON are static (just like the Math object).
+    </p>
+    <script>
+        const course = {
+            coursename: "javascript",
+            price: "999",
+            duration: "6 months"
+        }
+
+        //course.duration
+        const { duration: dur} = course; //destructure
+
+        // console.log(duration)
+        console.log(dur);
+
+        //jason format
+
+        // {
+        //     "name": "Shalini",
+        //     "coursename": "javascript",
+        //     "price": "999"
+        // }
+
+    </script>
+</body>
+</html>

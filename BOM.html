@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>BOM - Browser Object Model</h2>
+    <p>
+        <ul>
+            <li>location</li>
+            <li>history</li>
+            <li>innerHeight</li>
+            <li>innerWidth</li>
+            <li>outerHeight</li>
+            <li>outerWidth</li>
+            <li>open</li>
+            <li>close</li> 
+            <li>resizeTo</li> 
+            <li>moveTo</li>
+            <li>scrollBy</li>
+        </ul>
+    </p>
+    <script>
+      console.log(window);
+      console.log(window.location);
+      console.log(location.href);
+      //window.location.reload();  reloads for infinite time
+
+      //location.href = 'BOM.html';
+      //location.href = 'https://randomuser.me/'
+
+      //to go to back window
+      console.log(history);
+      console.log(history.back()); 
+      console.log(history.go(-1)); //to go one step back
+
+      // to go to forward window 
+      console.log(history.forward()); 
+      console.log(history.go(1));  ////to go one step forward
+
+      //inner height & Width
+      console.log(innerHeight);
+      console.log(innerWidth);
+
+      //outer height & Width
+      console.log(outerHeight);
+      console.log(outerWidth);
+
+      // to open a new tab
+      //open();
+
+      //to open any tab
+      //open('BOM.html');
+      //open('https://www.youtube.com/');
+
+      //name
+      console.log(window.name);
+      open('https://www.youtube.com/', "youtube", 'resizable');
+
+      //close
+      //close();
+
+      //resizeTo
+      resizeTo(600,500);  //this function will only work if the tab was opened by open function with resizable property
+
+      //moveTo
+      moveTo(0,0);  //this function will only work if the tab was opened by open function 
+      console.log( moveTo(200,0)); // it will be undefied
+
+      //scrollBy
+      scrollBy(50,50)
+
+      //to print from printer
+      print();
+    </script>
+</body>
+</html>
