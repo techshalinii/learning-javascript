@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> <b>Stack</b>  and <b>heap</b>  are two areas in memory where data is stored.
+        <br> The stack is used for static memory allocation, while the heap is used for dynamic memory allocation.</p>
+    <script>
+        //stack(primitive)
+      
+        let name = "Shalini";
+        let firstName = name;
+        console.log(name);
+        console.log(firstName);
+
+        firstName = "Muskan";
+        //after changing value
+        console.log(name);
+        console.log(firstName); 
+
+
+        //Heap (non-primitive)
+        let student1 = {
+            Sname: "Shalini",
+            email:"abc@gmail.com"
+        }
+
+        console.log(student1.email);
+
+
+        let student2 = student1;
+        student2.email = "xyz@gmail.com";
+        console.log(student1.email);
+        console.log(student2.email);
+
+
+
+    </script>
+</body>
+</html>

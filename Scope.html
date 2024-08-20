@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Global scope</h2>
+    <p>
+        In a programming environment, the global scope is the scope that contains, and is visible in, all other scopes.
+    </p>
+    <br><br>
+    <h2>Local scope</h2>
+    <p>
+        Local scope is a characteristic of variables that makes them local (i.e., the variable name is only bound to its value within a scope which is not the global scope).
+    </p>
+    <script>
+    let n1 = 15;
+    const n2 = 60;
+    var n3 = 30;
+
+    console.log(n1);
+    console.log(n2);
+    console.log(n3);
+
+    //block scope
+    if (true) {
+        let num1 = 15;
+        const num2 = 60;
+        var num3 = 30;
+    }
+
+    //console.log(num1); //num1 is not defined outside scope
+    //console.log(num2); //num1 is not defined outside scope
+    console.log(num3); //but num3 will not generate an error although it is also not defined outside the scope
+
+
+  // global scope
+  let a = 40;
+  if (true) {
+    let a = 20;
+    console.log("local", a);
+  }
+  console.log("Global:", a);
+    </script>
+</body>
+</html>
