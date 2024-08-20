@@ -43,6 +43,18 @@ https://github.com/user-attachments/assets/72b8a619-b47b-4f1d-9d17-6b7c214456ef
 
 ![json](https://github.com/user-attachments/assets/b8c7693e-f55b-4fff-9749-030edfc435aa)
 
+### Stack and Heap Memory
+![memory](https://github.com/user-attachments/assets/c6719d76-48ea-42d7-a6cc-b9cf8e1980e5)
+
+### IIFE
+![iife](https://github.com/user-attachments/assets/7e6e270c-a792-4be6-947f-8d6e3f6bed42)
+
+### Scope
+![scope](https://github.com/user-attachments/assets/16e9fb13-574c-4ce8-9283-ed7e8acfe875)
+
+
+
+
 
 
 
