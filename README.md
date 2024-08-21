@@ -52,6 +52,11 @@ https://github.com/user-attachments/assets/72b8a619-b47b-4f1d-9d17-6b7c214456ef
 ### Scope
 ![scope](https://github.com/user-attachments/assets/16e9fb13-574c-4ce8-9283-ed7e8acfe875)
 
+### Call Stack
+![callStack](https://github.com/user-attachments/assets/45b1740d-bbeb-4b4d-822e-3cdc7464f1c5)
+
+
+
 
 
 
