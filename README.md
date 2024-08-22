@@ -55,6 +55,11 @@ https://github.com/user-attachments/assets/72b8a619-b47b-4f1d-9d17-6b7c214456ef
 ### Call Stack
 ![callStack](https://github.com/user-attachments/assets/45b1740d-bbeb-4b4d-822e-3cdc7464f1c5)
 
+### JavaScript Promises
+![promise](https://github.com/user-attachments/assets/0fb4025b-3acb-441a-bf12-4122ce8dacaa)
+
+
+
 
 
 
