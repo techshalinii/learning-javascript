@@ -58,6 +58,12 @@ https://github.com/user-attachments/assets/72b8a619-b47b-4f1d-9d17-6b7c214456ef
 ### JavaScript Promises
 ![promise](https://github.com/user-attachments/assets/0fb4025b-3acb-441a-bf12-4122ce8dacaa)
 
+### Form
+Made a form using HTML, CSS and JavaScript which checks validations according to data.
+
+![form](https://github.com/user-attachments/assets/83dc74cc-e5c5-4fde-9522-6c87a53eeaf5)
+
+
 
 
 
