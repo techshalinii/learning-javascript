@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#03017b;
+        }
+        form{
+            width: 500px;
+            margin-left: 20vh;
+            padding: 20px;
+            background-color: whitesmoke;
+            border: solid black 4px;
+            font-size: 20px;
+        }
+        h1{
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            margin-left: 20vh;
+                }
+        
+    </style>
+</head>
+<body>
+    <script>
+    function val()
+    {
+       var id = document.getElementById("UId").value;
+       var contact = document.getElementById("cont").value;
+       var password = document.getElementById("Pass").value;
+       var cPassword = document.getElementById("cPass").value; 
+
+       if(id == "" || contact == "" || password == "" || cPassword ==""){
+        alert("All fields are mandatory");
+        return false;
+       }
+       else if(contact.length<10 || contact.length>10 ){
+        alert("Contact Number should be of 10 digits");
+        return false;
+       }
+       else if(isNaN(contact)){
+        alert("Only numbers are allowed! Please enter valid number");
+        return false;
+       }
+       else if(password!=cPassword){
+        alert("Please enter same password");
+        return false;
+       }
+       else{
+        true;
+       }
+    }
+    </script>
+    <h1>Form</h1>
+    <div>
+    <form onsubmit="return val()">
+        UserId: <br><input type="text" id="UId"> <br> <br>
+        Contact: <br><input type="text" id="cont"> <br> <br>
+        Password: <br><input type="password" id="Pass"> <br> <br>
+        Confirm Password: <br><input type="password" id="cPass"> <br> <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
